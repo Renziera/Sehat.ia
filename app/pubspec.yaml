@@ -58,6 +58,14 @@ flutter:
     - img/ic_rekam.png
     - img/ic_obat.png
     - img/ic_more.png
+    - img/Home.png
+    - img/HomeActive.png
+    - img/Periksa.png
+    - img/PeriksaActive.png
+    - img/Riwayat.png
+    - img/RiwayatActive.png
+    - img/Profil.png
+    - img/ProfilActive.png
 
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
