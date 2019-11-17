@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935537418311",
+    "firebase_url": "https://sehat-ia.firebaseio.com",
+    "project_id": "sehat-ia",
+    "storage_bucket": "sehat-ia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935537418311:android:aaae0d677df74d64591162",
+        "android_client_info": {
+          "package_name": "id.kuli.sehatia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935537418311-6gnj9po1nl8bv1vic7n0docjg5bao39b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.kuli.sehatia",
+            "certificate_hash": "b63075bcd0c2f04dd3bd07fe8eb2972382df75eb"
+          }
+        },
+        {
+          "client_id": "935537418311-1ise3hpl3mji96pam0jqucpe9l0qmndp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApKArdaVVJ_VIaVWn0n-SfpBzsqYAMlLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935537418311-1ise3hpl3mji96pam0jqucpe9l0qmndp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
