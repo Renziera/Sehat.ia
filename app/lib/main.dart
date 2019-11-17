@@ -10,6 +10,7 @@ class Sehatia extends StatelessWidget {
       title: 'Sehat.ia',
       theme: ThemeData(
         primarySwatch: Colors.red,
+        fontFamily: 'PTSans',
       ),
       home: Splash(),
     );
