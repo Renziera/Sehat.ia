@@ -40,16 +40,18 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+          SizedBox(height: 24),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               GestureDetector(
                 onTap: () {},
                 child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 22),
+                  child: SizedBox(
+                    width: 110,
+                    height: 110,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset('img/ic_periksa.png'),
                         SizedBox(height: 8),
@@ -68,10 +70,11 @@ class _HomePageState extends State<HomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 22),
+                  child: SizedBox(
+                    width: 110,
+                    height: 110,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset('img/ic_imunisasi.png'),
                         SizedBox(height: 8),
@@ -90,10 +93,11 @@ class _HomePageState extends State<HomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 22),
+                  child: SizedBox(
+                    width: 110,
+                    height: 110,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset('img/ic_kb.png'),
                         SizedBox(height: 8),
@@ -117,10 +121,11 @@ class _HomePageState extends State<HomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 10),
+                  child: SizedBox(
+                    width: 110,
+                    height: 110,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset('img/ic_obat.png'),
                         SizedBox(height: 8),
@@ -139,10 +144,11 @@ class _HomePageState extends State<HomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 16),
+                  child: SizedBox(
+                    width: 110,
+                    height: 110,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset('img/ic_rekam.png'),
                         SizedBox(height: 8),
@@ -161,10 +167,11 @@ class _HomePageState extends State<HomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 22),
+                  child: SizedBox(
+                    width: 110,
+                    height: 110,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset('img/ic_more.png'),
                         SizedBox(height: 8),
@@ -182,7 +189,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          SizedBox(height: 24),
+          SizedBox(height: 36),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(

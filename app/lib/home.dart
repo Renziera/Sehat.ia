@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sehatia/home_page.dart';
+import 'package:sehatia/periksa.dart';
+import 'package:sehatia/profil.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -11,9 +13,9 @@ class _HomeState extends State<Home> {
 
   List<Widget> _pages = [
     HomePage(),
+    Periksa(),
     SizedBox.shrink(),
-    SizedBox.shrink(),
-    SizedBox.shrink(),
+    Profil(),
   ];
 
   List<String> _titles = [
@@ -43,6 +45,16 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: _pages[_index],
+      floatingActionButton: _index == 3
+          ? FloatingActionButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => TambahProfil()));
+              },
+              child: Icon(Icons.add),
+              backgroundColor: Colors.red,
+            )
+          : null,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _index,
         onTap: (index) {
