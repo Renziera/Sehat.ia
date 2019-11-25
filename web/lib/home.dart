@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
               },
             ),
             ListTile(
-              title: Text('Jadwal Praktek'),
+              title: Text('Reminder'),
               leading: Icon(Icons.schedule),
               onTap: () {
                 setState(() {
