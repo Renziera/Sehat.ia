@@ -1,5 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:sehatia/imunisasi.dart';
+import 'package:sehatia/kb.dart';
+import 'package:sehatia/obat.dart';
+import 'package:sehatia/rekam.dart';
 
 class HomePage extends StatefulWidget {
   final Function periksa;
@@ -71,7 +75,10 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => Imunisasi()));
+                },
                 child: Card(
                   child: SizedBox(
                     width: 110,
@@ -94,7 +101,10 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => KB()));
+                },
                 child: Card(
                   child: SizedBox(
                     width: 110,
@@ -122,7 +132,10 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Obat()));
+                },
                 child: Card(
                   child: SizedBox(
                     width: 110,
@@ -145,7 +158,10 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Rekam()));
+                },
                 child: Card(
                   child: SizedBox(
                     width: 110,

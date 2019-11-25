@@ -24,21 +24,33 @@ class _AntrianState extends State<Antrian> {
               title: Text(doc.data()['pasien']),
               subtitle: Text(doc.data()['dokter'] + '\n' + waktu.toString()),
               isThreeLine: true,
-              trailing: RaisedButton(
-                color: Colors.red,
-                textColor: Colors.white,
-                child: Text('SELESAI'),
-                onPressed: () async {
-                  await firestore()
-                      .collection('pengguna')
-                      .doc(doc.data()['uid'])
-                      .collection('riwayat')
-                      .add({
-                    'nama': doc.data()['dokter'],
-                    'waktu': FieldValue.serverTimestamp(),
-                  });
-                  await doc.ref.delete();
-                },
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  RaisedButton(
+                    color: Colors.orange,
+                    textColor: Colors.white,
+                    child: Text('INGATKAN'),
+                    onPressed: () {},
+                  ),
+                  SizedBox(width: 16),
+                  RaisedButton(
+                    color: Colors.red,
+                    textColor: Colors.white,
+                    child: Text('SELESAI'),
+                    onPressed: () async {
+                      await firestore()
+                          .collection('pengguna')
+                          .doc(doc.data()['uid'])
+                          .collection('riwayat')
+                          .add({
+                        'nama': doc.data()['dokter'],
+                        'waktu': FieldValue.serverTimestamp(),
+                      });
+                      await doc.ref.delete();
+                    },
+                  ),
+                ],
               ),
             );
           }).toList(),
