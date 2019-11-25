@@ -44,10 +44,13 @@ class _RiwayatState extends State<Riwayat> {
                   return ListView(
                     children: snapshot.data.documents
                         .map((DocumentSnapshot document) {
+                      Timestamp waktu = document['waktu'];
                       return ListTile(
-                        title: Text('qwe'),
-                        subtitle: Text('ASD'),
+                        title: Text(document['nama']),
+                        subtitle: Text(waktu.toDate().toString()),
                         isThreeLine: true,
+                        leading: Image.asset('img/dokter.png'),
+                        onTap: (){},
                       );
                     }).toList(),
                   );

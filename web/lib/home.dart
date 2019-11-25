@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sehatia_dashboard/antrian.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -8,12 +9,17 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _index = 0;
 
+  List<Widget> _pages = [
+    Antrian()
+  ];
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Sehat.ia'),
       ),
+      body: _pages[_index],
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
