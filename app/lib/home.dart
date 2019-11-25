@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sehatia/home_page.dart';
 import 'package:sehatia/periksa.dart';
 import 'package:sehatia/profil.dart';
+import 'package:sehatia/riwayat.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -11,12 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _index = 0;
 
-  List<Widget> _pages = [
-    HomePage(),
-    Periksa(),
-    SizedBox.shrink(),
-    Profil(),
-  ];
+  List<Widget> _pages = [];
 
   List<String> _titles = [
     'Home',
@@ -24,6 +20,23 @@ class _HomeState extends State<Home> {
     'Riwayat',
     'Profil',
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    _pages = [
+      HomePage(
+        periksa: () {
+          setState(() {
+            _index = 1;
+          });
+        },
+      ),
+      Periksa(),
+      Riwayat(),
+      Profil(),
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+  final Function periksa;
+
+  const HomePage({Key key, @required this.periksa}) : super(key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -45,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               GestureDetector(
-                onTap: () {},
+                onTap: () => widget.periksa(),
                 child: Card(
                   child: SizedBox(
                     width: 110,
@@ -195,23 +198,11 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               children: <Widget>[
                 SizedBox(width: 16),
-                Container(
-                  height: 160,
-                  width: 300,
-                  color: Colors.orange,
-                ),
+                Image.asset('img/iklan1.png'),
                 SizedBox(width: 16),
-                Container(
-                  height: 160,
-                  width: 300,
-                  color: Colors.green,
-                ),
+                Image.asset('img/iklan2.png'),
                 SizedBox(width: 16),
-                Container(
-                  height: 160,
-                  width: 300,
-                  color: Colors.yellow,
-                ),
+                Image.asset('img/iklan3.png'),
                 SizedBox(width: 16),
               ],
             ),

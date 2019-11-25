@@ -67,6 +67,10 @@ flutter:
     - img/Profil.png
     - img/ProfilActive.png
     - img/anak.png
+    - img/iklan1.png
+    - img/iklan2.png
+    - img/iklan3.png
+    - img/dokter.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
